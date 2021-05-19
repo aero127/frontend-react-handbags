@@ -9,9 +9,9 @@ function Product({ image, title, price, title2}) {
             <p className="product-name">
                 {title}
             </p>
-            <h2 className="product-price">
+            <h4 className="product-price">
                 {price}
-            </h2>
+            </h4>
             <span className="product-title2">
                 {title2}
             </span>

@@ -8,6 +8,7 @@ import brand from './assets/brand.png'
 import our_story from './assets/our_story.png'
 import Product from "./Product";
 import Button from "./Button";
+import Tile from "./Tile";
 
 
 function App() {
@@ -15,9 +16,13 @@ function App() {
       <>
       <h1>Handbags & Purses</h1>
           <nav>
-              <Button text={"To the collection"}/>
-              <Button text={"Shop all bags"}/>
-              <Button text={"Pre-orders"}/>
+              <Button text={"To the collection"}
+              />
+              <Button text={"Shop all bags"}
+              />
+              <Button text={"Pre-orders"}
+                      disabled={true}
+              />
           </nav>
 
 <main>
@@ -46,6 +51,24 @@ function App() {
         title2={"New collection"}
     />
 </main>
+          <footer>
+
+    <Tile
+        title={"THE BRAND"}
+        story={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+    />
+              <Tile
+                  image={brand}
+
+              />
+    <Tile
+        image={our_story}
+        />
+    <Tile
+        title={"OUR STORY"}
+        story={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+          />
+          </footer>
       </>)
 }
 
